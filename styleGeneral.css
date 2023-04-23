@@ -1,0 +1,163 @@
+:root {
+    /* Colores paleta */
+    --color-claro: #b1d6e4;
+    --color-medio: #4a9ad4;
+    --color-oscuro: #16425b;
+
+    /* Colores botones */
+    --color-alerta: #ffc107;
+    --color-aviso: #9c27b0;
+    --color-info: #00bcd4;
+    --color-aceptar: #8bc34a;
+
+    /* Colores basicos */
+    --color-texto: #333;
+    --color-fondo: #f5f5f5;
+    --color-borde: #ccc;
+    --color-error: #F15854;
+}
+
+/* Estilo titulo */
+.titulo {
+    font-size: 2em;
+    color: var(--color-oscuro);
+}
+
+/* Estilo subtitulo */
+.subtitulo {
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--color-medio);
+}
+
+/* Estilo texto */
+.texto {
+    font-size: 1em;
+    color: var(--color-texto);
+}
+
+/* Estilo enlace */
+a {
+    color: var(--color-oscuro);
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* General */
+body {
+    font-family: 'Open Sans', 'Lato', 'Roboto', 'Montserrat', 'PT Sans', 'Source Sans Pro', 'Nunito', sans-serif;
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-medio);
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1rem;
+    margin-top: 0rem;
+
+    box-sizing: border-box;
+}
+
+.containerFooter {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerMenu {
+
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footerMenu li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerMenu li a {
+    color: var(--color-claro);
+
+}
+
+footer {
+    background-color: var(--color-oscuro);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer .subtitulo {
+    font-size: 1rem;
+
+}
+
+/* Estilo móvil */
+@media only screen and (max-width: 1024px) {
+    body {
+        padding-bottom: 6.5rem;
+    }
+
+    header {
+        min-height: 3.5rem;
+    }
+
+
+    section {
+        padding-top: 2.5rem;
+    }
+
+    footer {
+        height: 6.5rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    header {
+        height: 6rem;
+    }
+
+    section {
+        padding-top: 5rem;
+    }
+
+    footer {
+        display: flex;
+        height: 5rem;
+    }
+
+}

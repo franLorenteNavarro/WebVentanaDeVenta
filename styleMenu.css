@@ -1,0 +1,119 @@
+.clMenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clMenu ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.clMenu li {
+    flex: 1;
+    height: 100%;
+
+}
+
+.clMenu a {
+    color: var(--color-oscuro);
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #listaMenu {
+        max-height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: max-height 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    #listaMenu.active {
+        max-height: 6.5rem;
+        transform: translateY(0);
+    }
+
+    #menuIcono {
+        display: block;
+    }
+
+    #menuIcono.active+#listaMenu {
+        display: block;
+    }
+
+    .menuIcono {
+        align-self: center;
+        width: 8%;
+        height: 1.8rem;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .menuIcono span {
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: var(--color-oscuro);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menuIcono span:nth-child(1) {
+        top: 0;
+    }
+
+    .menuIcono span:nth-child(2) {
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translate(0, -50%);
+    }
+
+    .menuIcono span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .menuIcono.active span:nth-child(1),
+    .menuIcono.active span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    .menuIcono.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menuIcono.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    #btnMenu {
+        display: none;
+    }
+
+    .menuIcono {
+        display: none;
+    }
+}
