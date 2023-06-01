@@ -1,0 +1,42 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow-y: auto;
+  }
+  
+  .popup-politicaPrivacidad {
+    background-color: #fff;
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .popup-redesSociales {
+    background-color: #fff;
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+  }
+  #closePopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 1024px) {
+    .popup-politicaPrivacidad {
+      width: 80%;
+    }
+    .popup-redesSociales {
+      width: 80%;
+    }
+  }

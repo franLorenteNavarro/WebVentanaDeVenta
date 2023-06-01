@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styleGeneral.css">
-    <link rel="stylesheet" type="text/css" href="styleMenu.css">
+    <title>Jesus Lorente</title>
+    <link rel="stylesheet" type="text/css" href="./Styles/styleGeneral.css">
+    <link rel="stylesheet" type="text/css" href="./Styles/styleMenu.css">
+    <link rel="stylesheet" type="text/css" href="./Styles/stylePopUp.css">
 </head>
 
 <body>
     <header>
         <a id="logoInicio" href="#">
-            <img src="#" alt="Nombre de la empresa">
+            <img src="./Images/logo.svg" class = "logoInicio" alt="Jesus Lorente">
         </a>
         <nav class="clMenu">
             <div id="menuIcono" class="menuIcono">
@@ -307,13 +308,19 @@
         <div class="containerFooter">
             <p class="subtitulo">Todos los derechos reservados © 2023</p>
             <ul class="footerMenu">
-                <li><a class="texto" href="#">Términos y condiciones</a></li>
-                <li><a class="texto" href="#">Política de privacidad</a></li>
-                <li><a class="texto" href="#">Contáctanos</a></li>
+                <li><a class="texto" id="abrirPoliticaPrivacidad" href="#abrirPoliticaPrivacidad">Política de privacidad</a></li>
+                <li><a class="texto" id="abrirRedesSociales" href="#abrirRedesSociales">Contáctanos</a></li>
             </ul>
+            <div id="popupPoliticaPrivacidad" class="popup">
+                <div class="popup-politicaPrivacidad"></div>
+            </div>
+            <div id="popupRedesSociales" class="popup">
+                <div class="popup-redesSociales"></div>  
+            </div>
         </div>
     </footer>
-    <script src="funcionMenu.js"></script>
+    <script src="./Scripts/funcionMenu.js"></script>
+    <script src="./Scripts/Footer.js"></script>
 </body>
 
 </html>

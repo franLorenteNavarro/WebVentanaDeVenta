@@ -1,14 +1,28 @@
 :root {
+    /* Colores generales */
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+
     /* Colores paleta */
     --color-claro: #b1d6e4;
     --color-medio: #4a9ad4;
     --color-oscuro: #16425b;
+    --color-azul-claro: #80C6FF;
+    --color-azul-oscuro: #0072B5;
+    --color-verde-claro: #9BD770;
+    --color-verde-oscuro: #008C45;
+    --color-verde-oscuro2: #004422d7;
 
+    --color-azul-verdoso: #00A896;
+    --color-azul-turquesa: #13C4A3;
+
+    
     /* Colores botones */
     --color-alerta: #ffc107;
     --color-aviso: #9c27b0;
     --color-info: #00bcd4;
     --color-aceptar: #8bc34a;
+    /* --color-boton-aceptar: #00B894; */
 
     /* Colores basicos */
     --color-texto: #333;
@@ -20,14 +34,14 @@
 /* Estilo titulo */
 .titulo {
     font-size: 2em;
-    color: var(--color-oscuro);
+    color: var(--color-azul-verdoso);
 }
 
 /* Estilo subtitulo */
 .subtitulo {
     font-size: 1.5em;
     text-align: center;
-    color: var(--color-medio);
+    color: var(--color-azul-turquesa);
 }
 
 /* Estilo texto */
@@ -38,7 +52,7 @@
 
 /* Estilo enlace */
 a {
-    color: var(--color-oscuro);
+    color: var(--color-azul-oscuro);
     text-decoration: none;
 }
 
@@ -64,7 +78,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-medio);
+    background-color: var(--color-verde-claro);
     box-sizing: border-box;
 }
 
@@ -106,12 +120,12 @@ section {
 }
 
 .footerMenu li a {
-    color: var(--color-claro);
+    color: var(--color-alerta);
 
 }
 
 footer {
-    background-color: var(--color-oscuro);
+    background-color: var(--color-verde-oscuro2);
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -137,7 +151,7 @@ footer .subtitulo {
 
 
     section {
-        padding-top: 2.5rem;
+        padding-top: 3.5rem;
     }
 
     footer {
@@ -148,7 +162,9 @@ footer .subtitulo {
 @media only screen and (min-width: 1025px) {
 
     header {
-        height: 6rem;
+        height: 6rem; 
+        display: flex;
+        flex-direction: row;
     }
 
     section {
